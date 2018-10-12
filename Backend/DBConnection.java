@@ -47,6 +47,7 @@ public class DBConnection {
         
         @Override
         protected Connection initialValue() {
+            // TODO: Change parsed values to static db values, or provide a db.propterties
             final String driver = props.getProperty("driver");
             final String url = props.getProperty("url");
             final String user = props.getProperty("user");
