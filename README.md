@@ -6,9 +6,9 @@ Dell Connect is a machine learning powered internal social and professional plat
 
 Dell Connect features two modes to connect users: career mode + after hours mode. In career mode, users rank interests pertaining to career aspirations and interests. These interests include management, technology, business, etc. In after hours mode, users rank interests reflecting hobbies after work. These interests include hiking, gaming, cooking, etc.
 
-### Future
+### Prototype
 
-Currently, this protoype is for Dell only but will be expanded to other companies. A wider range of professional and social interests will be added, as well as the ability for more profile customization. 
+The "Your Profile" and "Your Interests" tabs are built out but the "Discover" and "Connect" tabs are not yet. Currently, this protoype is for Dell only but will be expanded to other companies. A wider range of professional and social interests will be added, as well as the ability for more profile customization. A friending component will be added through the "Connect" tab so employees can build their networks and stay in touch with people they meet through the matching process. With the "Discover" feature, users can search for other employees to friend by name, interests, position, etc. 
 
 
 ## Built With
