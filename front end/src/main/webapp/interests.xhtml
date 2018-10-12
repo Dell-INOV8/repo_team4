@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <h:outputStylesheet name="./css/default.css"/>
+        <h:outputStylesheet name="./css/cssLayout.css"/>
+        <title>Your Interests</title>
+    </h:head>
+    <h:body>
+        Please rank your interest level from 0 (least) to 10 (greatest). 
+        <br />
+        Next, Dell Connect will find team members with similar interests!
+        <br />
+        <br />
+    </h:body>
+    <h:body>
+    <h:form>        
+        <h3 style="margin-top: 0">Professional</h3>
+        <h:panelGrid columns="1" style="margin-bottom: 10px" styleClass="ui-grid">
+             <h:outputLabel for="manage" value="Management: " />
+             <p:inputText id="manage" value="#{sliderView.number1}" />
+             <p:slider for="manage" step="1" maxValue="10"  />
+             <h:outputLabel for="tech" value="Technology: " />
+             <p:inputText id="tech" value="#{sliderView.number2}" />
+             <p:slider for="tech" step="1" maxValue="10"  />
+             <h:outputLabel for="business" value="Business: " />
+             <p:inputText id="business" value="#{sliderView.number3}" />
+             <p:slider for="business" step="1" maxValue="10"  />
+             
+        </h:panelGrid>
+        
+        <p:separator />
+        
+        <h3 style="margin-top: 0">Hobbies</h3>
+        <h:panelGrid columns="1" style="margin-bottom: 10px" styleClass="ui-grid">
+            
+             <h:outputLabel for="hiking" value="Hiking: " />
+             <p:inputText id="hiking" value="#{sliderView.number4}" />
+             <p:slider for="hiking" step="1" maxValue="10"  />
+             <h:outputLabel for="gaming" value="Gaming: " />
+             <p:inputText id="gaming" value="#{sliderView.number5}" />
+             <p:slider for="gaming" step="1" maxValue="10"  />
+             <h:outputLabel for="cooking" value="Cooking: " />
+             <p:inputText id="cooking" value="#{sliderView.number6}" />
+             <p:slider for="cooking" step="1" maxValue="10"  />
+             
+        </h:panelGrid>
+    <p:commandButton value="Submit" update="display" oncomplete="PF('dlg').show()" />
+ 
+    <p:dialog header="Values" widgetVar="dlg" showEffect="fold" hideEffect="fold">
+        <h:panelGrid id="display" columns="1" cellpadding="5">
+              <h:outputText value="Number 1: #{sliderView.number1}" />
+              <h:outputText value="Number 2: #{sliderView.number2}" />
+              <h:outputText value="Number 2: #{sliderView.number3}" />
+              <h:outputText value="Number 1: #{sliderView.number4}" />
+              <h:outputText value="Number 2: #{sliderView.number5}" />
+              <h:outputText value="Number 2: #{sliderView.number6}" />
+        </h:panelGrid>
+    </p:dialog>
+    </h:form>
+    
+    </h:body>
+</html>
