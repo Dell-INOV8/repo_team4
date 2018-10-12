@@ -8,7 +8,7 @@ Dell Connect features two modes to connect users: career mode + after hours mode
 
 ## Built With
 
-* [Netbeans](https://netbeans.org/downloads/start.html?platform=macosx&lang=en&option=javaee) - Web App IDE
+* [Netbeans](https://netbeans.org/downloads/start.html?platform=macosx&lang=en&option=javaee) - Web App host + IDE
 * [Primefaces](https://www.primefaces.org/#primefaces) - UI developer tool
 * [MySQL Workbench](https://dev.mysql.com/doc/workbench/en/) - Database
 
